@@ -1,0 +1,8 @@
+pandas
+numpy
+# We will need the dataset and preprocessing libraries
+scikit-learn
+# We will need pyplot
+matplotlib
+# Visualise and study the dataset.
+seaborn
