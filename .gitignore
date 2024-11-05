@@ -11,4 +11,7 @@ Ethical-Hacking/lab04-phising/first-order-model
 FAI/__pycache__
 
 # redis cluster server stuffs
-NRDS/lab3-redis/
+NRDS/lab3-redis/*.conf
+NRDS/lab3-redis/700*
+NRDS/lab3-redis/appendonlydir
+NRDS/lab3-redis/dump.rdb
