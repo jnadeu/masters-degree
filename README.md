@@ -10,11 +10,15 @@ This repository contains materials and assignments for the Master's Degree in Ar
 
 ## Subjects
 
-* [Ethical Hacking (EH)](./EH/): 
+* [Ethical Hacking (EH)](./EH/)
 
-* [Fundamentals of AI (FAI)](./FAI/):
+* [Fundamentals of AI (FAI)](./FAI/)
 
-* [Machine Learning (ML)](./ML/):
+* [Machine Learning (ML)](./ML/)
 
-* [Non-relational Databases (NRDS)](./NRDS/):
+* [Non-relational Databases (NRDS)](./NRDS/)
+
+* [Neural Networks](./NN/)
+
+* [Cloud Computing and Distributed Systems](./CCDS/)
 
