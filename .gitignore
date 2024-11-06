@@ -4,14 +4,14 @@
 # Python Virtual environmnet 
 .venv
 
-# Git repo deepfake model
-Ethical-Hacking/lab04-phising/first-order-model
-
-# Connect4 pycache
+# FAI ignore files
 FAI/__pycache__
 
-# redis cluster server stuffs
+# NRDS ignore files
 NRDS/lab3-redis/*.conf
 NRDS/lab3-redis/700*
 NRDS/lab3-redis/appendonlydir
 NRDS/lab3-redis/dump.rdb
+
+# NN ignore files
+NN/lab-classification/*.png
