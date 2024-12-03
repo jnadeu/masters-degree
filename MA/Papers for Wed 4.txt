@@ -1,0 +1,56 @@
+Papers for Wed 4
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Paper presented by Zarin Karanikolov:
+
+The paper discusses the problem of effectively analysing samples of potentially malicious software to determine whether they represent a threat and creating signatures for detection.
+The enormous volume of new malware samples received daily by antivirus vendors, such as Symantec and McAfee, makes manual analysis time consuming and error prone. Traditional signature detection methods are ineffective against unknown threats and specifically malware, so automated analysis techniques are needed.
+
+This problem is crucial for the increasing sophistication and volume of malware threats.
+Manual analysis keep up with the volume of this flood, delaying detection and response to them. 
+The economic incentives that drive malware development further underline the urgency of developing robust and automated analysis methods. 
+The inability of signature detection to identify unknown threats emphasises the importance of analysis techniques based on behavioural analysis for effective malware mitigation.
+
+There are many possible solutions to the problem. Among them, the most notable or most interesting would be function call monitoring that intercepts and analyses function calls made by the malware. 
+There would also be function parameter analysis that tracks the actual values passed to functions during execution. 
+Another solution that is also exposed is information flow tracking that monitors the propagation of sensitive data within the system during the execution of the malware. 
+Then there is also the analysis of the instruction trace and the autostart extensibility point monitoring. 
+
+
+The conclusion would be that dynamic malware analysis is vital to understanding and countering evolving threats. 
+It highlights the importance of combining several techniques to create a full analysis system. 
+Dynamic analysis offers several improvements over traditional signature methods such as detection of unknown threats, resistance to code obfuscation, knowledge of malware behaviour, automated analysis and clustering.
+
+
+Paper presented by Pau de las Heras:
+
+The paper discusses the challenge of identifying active Command and Control (C2) servers for a given IoT malware binary. This is a crucial task in detecting and containing botnets.
+
+Then identifying active C2 servers is crucial because these servers control infected devices and orchestrate malicious activities such as denial-of-service (DoS) attacks.
+
+Then the paper talks about how security professionals can mount a defence and contain these botnets is also discussed. 
+It also discusses that identifying live C2 servers is challenging due to the short lifespan of C2 servers, and also the botmasters often change the location of servers and use sophisticated proprietary communication protocols. Among other factors.
+
+The paper proposes C2Miner, a innovate approach that tricks IoT malware binaries into revealing their live C2 servers. This approach leverages old, disposable binaries as probes to identify active servers.
+
+C2Miner is a promising step towards identifying active C2 servers really fast that helps to solve one of the challange that was the short lifespan, especially for IoT malware, which poses a growing threat to cybersecurity.
+If we can do a large scale deployment of C2Miner could make a significant contribution to cybersecurity by identifying active C2 servers in real time. Also mitigate the impact of botnets and potentially disrupt entire botnet infrastructures.
+
+
+Paper presented by Marta Espejo:
+
+
+The paper "Debugging in the (Very) Large: Ten Years of Implementation and Experience," addresses the challenges of debugging software deployed on a vast scale, involving millions of machines. 
+First of all talks about traditional debugging methods, which rely on individual error reports and programmer intervention, become inadequate in a large scale. 
+The enormous volume of error reports, complexity of software systems, and difficulty in isolating main causes create a significant obstacle to maintaining software quality.
+
+
+In this case the problem is crucial because the number of deployed software systems, like Microsoft Windows and Office, has scaled to millions, making effective debugging essential for ensuring their reliability and functionality. 
+Explain as the number of software components and deployed systems increase, traditional methods fail due to the overwhelming volume of error reports and difficulty pinpointing the source of errors.  
+Prioritizing error reports from millions of users becomes arbitrary and inefficient.
+
+In this paper the solution presented are Windows Error Reporting (WER), a distributed system developed by Microsoft to automate the collection, analysis, and resolution of software errors on a large scale.
+In this case WER has significantly improved the quality and reliability of Windows systems by enabling data driven debugging at a massive scale.
+Its innovative combination of automated error report collection, sophisticated bucketing algorithms and statisticals about debugging techniques has revolutionized how software errors are identified and addressed.
+WER's success demonstrates the power of leveraging data for efficient and effective debugging in the modern software development landscape.
+
