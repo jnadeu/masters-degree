@@ -1,6 +1,6 @@
 Homeworks guide:
 
-Prompt Notebook:
+- Prompt Notebook:
 
 Do a brief of the document responding following questions:
 

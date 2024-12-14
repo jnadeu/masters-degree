@@ -1,0 +1,52 @@
+Papers for Wed 11
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Paper presented by Josep Soler
+
+The paper "Dissecting Android Malware: Characterization and Evolution," focuses on the problem of the rapid growth and increasing sophistication of malware targeting the Android platform, the majority of the mobile ecosystem nowadays.
+The authors highlight various alarming trends in Android malware, like dominance of repackaging, prevalence of privilege escalation, widespread botnet functionality, focus on financial gain, rapid evolution and antianalysis techniques to avoid detecting this malware.
+
+This paper makes emphasies on the fast proliferation of Android malware poses a significant threat to user security and privacy. 
+This problem is increasingly relevant due to Android's popularity, openness of the platform, financial incentives and the limited effectiveness of current security solutions like antivirus solutions.
+In this case doesn't explicitly propose a single comprehensive solution to the Android malware problem. 
+Instead, it highlights key areas where improvement is needed to mitigate the threat, like stricter app market policing, addressing platform vulnerabilities, robust detection mechanisms and user awareness and education about social enginerrings tactics and other practices.
+
+The conclusions and potential improvements presented in this paper underscores the urgent need for a multifaceted approach to combat the growing threat of Android malware. 
+The suggested solutions are reducing the spread of malware, protecting user devices, improving detection rates and empowering users educating about the risks and promoting safe practices.
+By addressing these key areas, the security community can make significant mitigating the threat of Android malware and protecting user devices and data.
+
+
+Paper presented by Pol Vidal:
+
+his paper focues on the growing challenge of analyzing malware as the volume and sophistication of malicious code increase.
+Traditional manual analysis is time consuming and keep up with the influx of new malware samples.  
+Static analysis, while faster, is vulnerable to obfuscation techniques employed by malware authors. 
+These techniques make it difficult to understand the true functionality of malware without executing it.
+
+The problem presented is important because malware writing is becoming increasingly profitable, leading to a continuous rise in malicious attacks and the time between the emergence of new malware and the availability of effective countermeasures (like antivirus signatures) leaves systems vulnerable.
+
+The solution propused are TTAnalyze, a tool that dynamically analyzes malware in a safe and controlled environment. 
+TTAnalyze addresses the shortcomings of existing dynamic analysis methods utilizing PC emulation, specifically Qemu, to run malware within a complete Windows XP environment. 
+Monitoring both Windows API and native API calls, offering a comprehensive view of malware behavior.
+Injecting function calls to enhance analysis and generating detailed reports summarizing file, registry, service, process, and network activity, aiding security researchers in understanding malware functionality.
+
+In this case the conclusions are the evaluation of TTAnalyze that concluded with a high accuracy in identifying malware behavior when compared to Kaspersky Lab descriptions. 
+Discrepancies in some cases and limitations in capturing actions performed by external processes but its works in someway.
+The future improvement can be explore multiple execution paths to capture a wider range of malware behaviors. 
+Extend monitoring to include processes interacting with the malware to capture a more complete picture of its actions.
+
+
+Paper presented by Alaaraji Mohammed:
+
+The paper focuses on the problem of incomplete capture of malware behaviour using traditional dynamic analysis techniques. 
+These techniques typically run a program in a constrained environment, monitoring interactions with the operating system to see how the malware reacts. 
+However, they often only look at a single execution path, so they may miss malicious actions that are triggered under specific conditions.
+
+This issue is important because malware can display different behaviours depending on several factors, such as the presence of specific files or directories, Internet connectivity, system date or time, as well as user names or IP addresses and commands received through a control channel.
+Failure to enable these conditional behaviours during analysis can lead to an incomplete understanding of the malware capabilities, hindering the development of an effective detection and removal method.
+
+The paper proposes a system that scans multiple execution paths to discover hidden malicious actions. This system tracks program input and identifies the points where this input is used in control flow decisions. 
+It creates snapshots of the program state at these decision points as well as allows the program to execute along a branch.
+This approach allows the system to systematically explore different execution paths and observe behaviour that could only occur under certain conditions.
+
+The proposed system offers several improvements over traditional sdynamic analysis, such as more comprehensive behavioural reports, a constraint system to identify specific input values or conditions that trigger certain malicious behaviours, and automated command malware analysis.

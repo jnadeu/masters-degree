@@ -1,0 +1,60 @@
+Papers for Thu 12
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Paper presented by Stoyan Valchev:
+
+The paper addresses the challenge of inaccurate labels in malware datasets, which difficult the performance of machine learning malware classification. 
+
+This problem is crucial because effective malware classification is essential for cybersecurity. 
+Accurate classifiers are vital for threat detection and response, allowing security professionals to quickly identify and mitigate malware threats.
+
+Inaccurate labels directly impact the learning process. Supervised learning algorithms are really important choose correct labels. 
+If there are incorrect labels then you are training of inaccurate models.
+
+In this paper the solution presented are MORSE, that is a noise learning method specifically designed to address the high noise rates and extreme class imbalance found in real world malware datasets.
+MORSE is based on a semisupervised learning approach adapted from the FixMatch algorithm.
+The keys of MORSE are identification and treatment of potentially mislabeled data, the integration of sample reweighting, to combat data imbalance.
+
+The conclusions are on MORSE has minimal computational overhead, making it a viable solution for real world deployment. It achieves high accuracy even with noise rates exceeding 50% in some classes.
+Then a possible improvements can be robustness to noisy labels or handling data imbalance in some better way. 
+
+
+Paper presented by Eric Roy:
+
+The paper talks about the immense threat posed by internet worms to the global security of the internet. These malicious programs can rapidly compromise vast numbers of internet hosts by exploiting security flaws in widely used services.
+The authors highlight that compromised hosts can be leveraged to launch massive DDoS attacks, steal sensitive information, corrupt data and disrupt network operations.
+
+This problem is crucial due to the potential for significant damage and disruption on a scale that could impact warfare between nations or serve terrorist activities.
+It emphasize the growing threat level with the internet becoming integral to critical infrastructure and the emergence of rapidly spreading worms. 
+Controlling millions of internet hosts could enable attackers to bring down e-commerce sites, news outlets, critical infrastructure, and even root name servers.
+
+In this case the solution proposed the creation of a "Cyber Center for Disease Control" (Cyber CDC) to proactively monitor, analyze, and combat worm threats.
+Is modeled after the public health CDC, the Cyber CDC would identify outbreaks by deploying widespread sensors and conducting real time data analysis. 
+Also analyze pathogens using advanced program analysis tools and expert teams, combat infections, anticipate new vectors and proactively design detectors for new vectors.
+
+The conclusions are the establishment of the Cyber CDC as a critical step towards mitigating the escalating threat of internet worms.
+The authors believe this dedicated institution can address the challenges of fostering collaboration among researchers and security experts, driving research and development of new tools and strategies and proactively identifying and responding to emerging threats.
+
+
+Paper presented by Ricard Renalias:
+
+The paper "Jigsaw Puzzle: Selective Backdoor Attack to Subvert Malware Classifiers," discusses the vulnerability of malware classifiers to backdoor attacks. 
+More specifically on the lack of stealthiness in existing backdoor attacks, making them detectable by modern defenses. 
+Explain a real situation where attackers inject poisoned data into public malware collection channels used by antivirus companies for retraining their classifiers.
+
+The problem is significant because malware classifiers play a crucial role in cybersecurity. If compromised by a backdoor attack, these classifiers could misclassify malicious software as benign.
+This research is relevant because it addresses the limitations of existing backdoor attacks that are easily detectable by defenses like MNTD, a metaclassifier detection method.
+
+The paper solution proposes a novel backdoor attack called Jigsaw Puzzle (JP), which aims to be more stealthy than existing attacks.
+The key innovation of JP is its selective nature. Instead of targeting all malware indiscriminately, JP focuses on protecting a specific malware family.
+This approach is based on the realistic observation that malware authors are primarily interested in protecting their own work.
+
+The Jigsaw Puzzle utilizes an alternate optimization algorithm to learn a trigger pattern that complements the inherent characteristics of the targeted malware family.
+This trigger is designed to activate the backdoor effect only when combined with the unique patterns of the targeted malware.
+
+The paper concludes that JP is an effective and stealthy backdoor attack, capable of evading detection by state-of-the-art defenses like MNTD and STRIP.
+The Jigsaw Puzzle attack offers several improvements over conventional backdoor attacks like stealthiness, by selectively targeting a specific malware family, and also the realism.
+This selective protection ensures the poisoned classifier maintains its overall accuracy and avoids raising suspicion.
+The development of JP underscores the need for more sophisticated defenses against backdoor attacks.
+The authors suggest exploring countermeasures such as exhaustive family level scanning, focusing on new malware variants, and enhancing feature engineering to better distinguish malware families.
+The authors also acknowledge certain limitations, primarily the focus on Android malware and the potential for further optimization of the attack strategy.
