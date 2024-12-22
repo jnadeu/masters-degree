@@ -1,0 +1,56 @@
+Papers for Wed 18
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Paper presented by Mateu Magem:
+
+The paper talks about the problem of code analysis is a critical part of software engineering for ensuring quality, reliability, and security. 
+Having automated tools for code analysis are increasingly important due to the complexity and size of modern software. 
+The code obfuscation, used to protect intellectual property or hide malicious activities, challenges traditional code analysis methods. 
+
+The paper approach involves using a constructed dataset of both non-obfuscated and obfuscated code in JavaScript, Python, and C.
+The code was taken from a variety of sources, including open-source projects and code challenges. Also the study evaluates the performance of the LLMs and also includes case studies of real world software, including malware.
+
+The solution presented is to evaluate the capabilities of LLMs in code analysis, testing their ability to understand both normal and obfuscated code.
+The study shows that larger models like GPT-4 are better at code analysis than smaller models. Also finds that code obfuscation significantly decreases the accuracy of LLMs in analyzing the code. 
+
+In conclusion, the paper demonstrates that LLMs have significant potential as tools for code analysis.
+The larger models, particularly the GPT series, are more suitable for code analysis tasks, but they have limitations, especially with obfuscated code. But the smaller models are not suitable for code analysis. 
+In summary the solution presented in the paper, using LLMs for code analysis, can improve software development by assisting in identifying vulnerabilities and malicious activities. However, LLMs are not a perfect replacement for human code analysis
+
+
+Paper presented by Eric Muthomi Gitonga:
+
+The paper introduces MalPhase that is a novel system for accurate malware detection using network flow data.
+The problem faced are the increasing economic impact of cyberattacks and the rapid proliferation of new malware.
+The traditional network traffic analysis techniques that rely on aggregated network data have limitations, providing limited information and mixed classification results.
+Nowadays the existing flow approaches often lack the ability to perform accurate classification, such as classifying malware by type and family.
+
+The increasing volume of malware and the limitations of current detection methods make it challenging to effectively protect against cyber threats.
+The number of new, unique malware samples has dramatically increased, there is an urgent need for effective detection methods that can keep up with the increasing sophistication and volume of malware.
+
+The solution presented are MalPhase that is a multi phase and multi tier system that combines supervised and unsupervised machine learning techniques to analyze network flow data.
+The system MalPhase have 3 phases in the classification process. The first one are binary classification, denoising autoencoder removes benign traffic noise. Then the malware type classification and the last phase are the malware family classification.
+
+In conclusions MalPhase demonstrates high detection and classification accuracy. The system is robust in noisy environments, also can generalize to detect unseen malware families with performance comparable to known samples even with noise.
+The large scale of the dataset used for evaluation makes MalPhase a valuable contribution to the study of machine learning and network security fields.
+Finally the paper explain how the confusion matrix of MalPhase classification allowed researchers to discover the relationships between some malware families, highlighting the usefulness of MalPhase as an analysis tool.
+
+
+Paper presented by Anass Anhari:
+
+The paper talks about the problem of malware detection, which is becoming increasingly important as society relies more on computer systems. 
+Nowadays the signature based antivirus methods are inadequate because they depend on manually crafted rules that do not generalize to new malware variants and can be easily evaded by attackers. 
+
+The problem is important because malware can cause significant damages, costing millions of dollars in single instances.
+The traditional antivirus software is becoming ineffective, as a lot of new malware samples are found every day. 
+The limitations of signature based have been recognized by antivirus providers and industry experts for many years, highlighting the urgent need for better solutions.
+
+The solution presented are a static analysis approach using a neural network to process the raw byte sequences of entire executable files to determine maliciousness.
+In this paper the neural network presented are called MalConv that is designed to handle long sequences and capture both local and global contexts within the binary.
+
+The MalConv model has shown promising results like achieves high accuracy demonstrating its effectiveness in malware detection.
+Also it show good generalization ability across different datasets, indicating it is learning meaningful features rather than overfitting to specific biases.
+The model uses a wider breadth of information types beyond the PE-header which is a common focus of other methods. Also can scale with more data, further improving its performance.
+
+In conclusion the MalConv model offers a promising approach to malware detection by processing raw byte sequences with a neural network. It improves upon existing methods by minimizing reliance on domain knowledge, generalizing well across datasets, and utilizing a wider range of information from the binary file.
+Also highlight the challenges of working with long sequences and the multimodal nature of binary data, offering ideas for future research.

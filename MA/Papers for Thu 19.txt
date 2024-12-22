@@ -1,0 +1,66 @@
+Papers for Thu 19
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Paper presented by Marta Viñas:
+
+This paper talks about the emergence of the "exploit-as-a-service" model in the malware ecosystem, specifically focusing to browser compromises.
+The problem the paper addresses is the evolution of profit malware, where the act of compromising a host is now separated from the methods used to monetize that compromised host.
+
+The problem is important because exploit vulnerabilities in browsers and plugins through compromised or malicious websites, have become a major threat to end users that haven't technic knowledge.
+The exploit-as-a-service model has lowered the barrier to entry for attackers, allowing them to operate at scale by easily purchasing or renting exploit kits and services.
+The exploit kits are software packages that bundle multiple exploits targeting browser and plugin vulnerabilities to automate the process of compromising a victim machine.
+Compromised legitimate websites are often used as initial points of infection, redirecting users to exploit servers, affecting regular users browsing habits
+
+The paper presents a detailed analysis of the exploit-as-a-service model which includes analyzing the prevalence of exploit kits, identifying malware families, investigating the infection chain, examining the traffic volume and also evaluating the impact of Google Safe Browsing on the lifetime of malicious domains.
+
+The conclusions are the exploit-as-a-service model has fundamentally altered the distribution of malware by making it easier for attackers to acquire and deploy exploit tools.
+Also the short lifespan of exploit domains and the use of compromised websites as initial vectors pose considerable challenges for detection and prevention.
+
+The paper highlight the need for multi layer defenses, including in-browser defenses, to detect and prevent malicious downloads before a vulnerability can be exploited.
+The importance of focus on the dominant exploit packs may be more effective for detection than attempting to locate every malicious URL because a few exploit kits are responsible for the majority of the attacks.
+
+In summary all the information presented in the paper can improve the current situation helping security researchers understand the working of the exploit-as-a-service market. Also allowing the developers to implement better detection methods that are proactive rather than reactive.
+Finally, all of this allow to more effective detection strategies that can adapt to the constantly evolving malware landscape.
+
+
+Paper presented by Pedro Matheus Figueredo:
+
+The paper talks about the problem of analyzing packed and obfuscated malware which is a significant challenge in cybersecurity.
+The problem is that malware uses binary packaging to hide its malicious code.
+The paper explain that the malware uses Windows APIs to interact with the OS to perform malicious behaviors.
+Also obfuscating API calls hides critical information about the malware functionality.
+
+The important of the problem is the packed malware is a very common technique to evade detection.
+And also API obfuscation makes it difficult to understand malware, even when the code is unpacked.
+
+The main limitation is the lack of executable unpacked code limits the use of dynamic analysis in this situation.
+Also the trend of binary packing development reveals that malware uses multi layers of self modification code.
+The paper present the solution of API-Xray that is a hardware assisted tool designed to reconstruct import tables from packed malware.
+The API-Xray uses a mix between a static and dynamic analysis. It use static analysis to identify potential API call sites.
+
+The conclusions are the API-Xray effectively reconstructs import tables, addressing the limitations of existing tools and techniques
+The use of hardware assisted tracing allowing API-Xray to bypass various API obfuscation schemes.
+Use the mix between static and dynamic analysis have benefits to improve the detection.
+Also increases the ability to detect new malware variants because it restores API context which provides insight into malware intentions.
+
+
+Paper presented by Eric Ramirez:
+
+The paper talks about the problem of detecting malicious code specifically viruses in executable files. 
+The problem presented is that traditional signature based detection methods used by antivirus are easily evaded for malware.
+The malware use obfuscation techniques to improve their malisous code and evade detection.
+The main problem is that malware creator are obfuscating their code and the antivirus developers are always trying to deobfuscate the code in order to detect the malicious patterns.
+
+The importance are the malware can have devastating effects on cyber infrastructure, leading to data breaches, system damage and coordinated attacks.
+The traditional signature based detection is insufficient because malware creators can easily change the code signature via obfuscation.
+
+The solution presented are the SAFE (Static Analyzer for Executables) that is a novel tool designed to detect malicious code patterns using static analysis.
+The SAFE works by analyzing the executable structure and identifying patterns that are resistant to obfuscation.
+THe key of SAFE are the detection algorithm is designed to check for the presence of malicious patterns in the abstract representation not in the raw code.
+
+The conclusions are the SAFE demonstrated a high accuracy in detecting malicious code and is more resistant to simple obfuscation attacks than commercial antivirus software.
+The tool use abstraction, static analysis and pattern matching techniques that are not dependent upon the specific code is key of its resilience.
+The paper suggest that performance improvements are needed to analyze larger programs efficiently. The tool should be extended to handle more complex obfuscation techniques.
+
+
+Paper preseted by me are Training Robust ML-based Raw-Binary Malware Detectors in Hours, not Months.
