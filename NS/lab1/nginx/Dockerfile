@@ -8,3 +8,5 @@ COPY certs /etc/nginx/certs
 
 # Copy HTML files
 COPY html /usr/share/nginx/html
+
+EXPOSE 80 443
