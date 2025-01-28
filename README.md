@@ -18,7 +18,7 @@ This repository contains materials and assignments for the Master's Degree in Ar
 
 * [Non-relational Databases (NRDS)](./NRDS/)
 
-* [Neural Networks](./NN/)
+## License
 
-* [Cloud Computing and Distributed Systems](./CCDS/)
+This project is licensed under the Apache License, Version 2.0. See the [LICENSE](./LICENSE) file for details.
 
