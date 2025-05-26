@@ -28,7 +28,25 @@ Each subject area is organized in separate folders, containing lecture notes, as
 
 * [Network Security (NS)](./Q1/NS/)
 
+* [System Development Lifecycle: Continuous Development and Integration (SDLCDI)](./Q1/SDLCDI/)
 
+---------
+
+* [Advanced Cryptography (ACR)](./Q2/ACR/)
+
+* [Advanced Deep Learning Modes (ADLM)](./Q2/ADLM/)
+
+* [Probabilistic Methods (PM)](./Q2/PM/)
+
+* [Natural Language Processing (NLP)](./Q2/NLP/)
+
+* [Sequences Recurrent Networks (SNR)](./Q2/SRN/)
+
+* [System Security (SS)](./Q2/SS)
+
+* [Digital Forensic (DF))](./Q2/DF)
+
+* [IoT Connectivity (IOTC))](./Q2/IOTC)
 
 ## License
 
