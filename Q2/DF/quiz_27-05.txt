@@ -1,0 +1,31 @@
+1. cybersecurity discipline are threat intelligence and treat hunting and more for sure but don't remember right now.
+
+2. the tools for do digital forensic are very specific, SIEM, Proxy, firewall, IAM, 
+
+3. cyberdepartment structure are blue team, red team and a mix called purple team.
+
+4. Malware are a kind of virus or a software that do something wrong or can misfunction a system.
+
+5. Firewall has the function of block or control all the incoming and outgoing connection throught a network
+
+6. Data breach and DLP we can prevent improving our security measures, with mitigation process and take all the data in a really secure place.
+
+7. AIM honestly I don't know what is it..
+
+8. Vulnerability they can avoid it, if we develop the apps thinking in security like an important aspect of the software product.
+
+9. zero-day are a vulnerability that anyone knows and can be exploited because it don't exists any fix for this.
+
+10. SIEM are a system or a tool to monitoring and analysing the logs
+
+11. Awareness are important to prevent a misfuction or exploit the human fragility, because using social enginering we can break a really good security system.
+
+12. pentesting is important every important change or every certain time to check that all are fine and prevent possible vulnerabilities or attacks.
+
+13. IOCs have a grades of range to indentify if is really important problem and which level of security protocols we need to apply.
+
+14. There are a lot of attack types, like man in the middle, pishing, randsomeware, trojan, ...
+
+15. I don't remember exactly the index, there were too many points on it.. Some points could be the types of attacks, the pieces or the tools or systems that intervent in the security aspects inside and oganization or a product (this can be the summary in overall) 
+
+16. Devsecops are important because improve the security of the software and also the process of the deployment this software and also mantain this software safe from attacks or vulnerabilities.
