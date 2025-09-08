@@ -36,6 +36,10 @@ Each subject area is organized in separate folders, containing lecture notes, as
 
 * [Advanced Deep Learning Modes (ADLM)](./Q2/ADLM/)
 
+* [Cyber-physical Systems (CPS)](./Q2/CPS/)
+
+* [Wireless System Security (WSS)](./Q2/WSS)
+
 * [Probabilistic Methods (PM)](./Q2/PM/)
 
 * [Natural Language Processing (NLP)](./Q2/NLP/)
@@ -50,5 +54,5 @@ Each subject area is organized in separate folders, containing lecture notes, as
 
 ## License
 
-This project is licensed under the Apache License, Version 2.0. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
